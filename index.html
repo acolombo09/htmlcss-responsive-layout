@@ -3,25 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Htmlcss | Responsive Layout</title>
 </head>
 <body>
   <header>
     <nav>
-      <div class="nav-brand">
-        <img src="imgs/logo.png" alt="">
-        <span class="nav-brand-text">Viva il Responsive</span>
+      <div class="container">
+        <div class="nav-brand">
+          <img src="img/logo.png" alt="logo">
+        </div>
+        <a href="#" class="nav-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <ul>
+          <li><a href="#">Planning</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About Us</a></li>
+          <li>
+            <button class="btn btn-white">Get Started</button>
+          </li>
+        </ul>
       </div>
-      <a href="#" class="nav-menu-btn">
-        <i class="fa-solid fa-bars"></i>
-      </a>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chi siamo</a></li>
-        <li><a href="#">Servizi</a></li>
-        <li><a href="#">Contatti</a></li>
-      </ul>
     </nav>
   </header>
   <main>
