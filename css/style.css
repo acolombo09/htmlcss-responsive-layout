@@ -151,15 +151,6 @@ section{
   color: white;
 }
 
-.btn-round{
-  background-color: var(--color-secondary);
-  width: 2rem;
-  border-radius: 50%;
-}
-.btn-round:hover{
-  background-color: var(--color-secondary-hover);
-}
-
 /* *** NAVBAR *** */
 
 nav .container{
@@ -239,6 +230,17 @@ main .fa-solid{
   font-size: 4rem;
 }
 
+/* Questo elemento prende anche il .fa-solid, rimarrà in font size troppo grande.
+  Per evitare di sporcare troppo il codice, lascio volontariamente invariate
+  le proporzioni errate.
+*/
+.fa-arrow-down{
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  color: #333333;
+}
+
 /* 
 *** Mobile First MEDIA QUERY ***
 */
@@ -292,6 +294,12 @@ main .fa-solid{
     display: flex;
   }
 
+  .bg-violet .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .col .col-1-2 .card img{
     width: 100%;
     object-fit: contain;
@@ -306,7 +314,7 @@ main .fa-solid{
     /* flex-basis: calc((100% / 3) * 2); */
   }
   .col-1-2-large{
-    flex-basis: 50%;
+    flex-basis: 0;
   }
   .col-full-width-large{
     flex-basis: 100%;
