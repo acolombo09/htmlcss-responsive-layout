@@ -214,29 +214,27 @@ main .fa-solid{
 @media screen and (min-width: 576px) {
   .row{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
-  .col-2-3{
-    display: flex;
-    flex-direction: column;
-  }
   .col .col-1-2 .card img{
-    width: 50%;
+    width: 100%;
     object-fit: contain;
     margin-bottom: -2rem;
-  }
-  .col-full-width-medium{
-    flex-basis: 100%;
   }
   .col-1-3-medium{
     flex-basis: calc(100% / 3);
   }
   .col-2-3-medium{
+    display: flex;
+    flex-direction: column;
     flex-basis: calc((100% / 3) * 2);
   }
   .col-1-2-medium{
     flex-basis: 50%;
+  }
+  .col-full-width-medium{
+    flex-basis: 100%;
   }
 }
 
