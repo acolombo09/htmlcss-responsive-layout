@@ -62,13 +62,16 @@ section{
 .card{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   gap: 1.5rem;
   font-size: .9rem;
 }
 
-.card-centered{
-  text-align: center;
+.bg-violet{
+  background-color: var(--color-secondary);
+}
+
+.bg-white{
+  background-color: white;
 }
 
 /* UTILITIES */
@@ -148,6 +151,15 @@ section{
   color: white;
 }
 
+.btn-round{
+  background-color: var(--color-secondary);
+  width: 2rem;
+  border-radius: 50%;
+}
+.btn-round:hover{
+  background-color: var(--color-secondary-hover);
+}
+
 /* *** NAVBAR *** */
 
 nav .container{
@@ -182,9 +194,10 @@ nav ul {
 
 nav ul a {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: .5rem .5rem;
   color: white;
   text-decoration: none;
+  font-size: .9rem;
 }
 
 /* *** MAIN *** */
@@ -195,10 +208,31 @@ nav ul a {
   margin-bottom: -2rem;
 }
 
+.col-1-2 > img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.card > img{
+  width: 100%;
+  object-fit: contain;
+}
+
 .card p{
   font-size: .9rem;
   line-height: 1.5rem;
+}
+
+.card-blue{
   color: #465460;
+}
+
+.card-violet{
+  color: white;
+}
+
+.card-centered{
+  text-align: center;
 }
 
 main .fa-solid{
@@ -243,13 +277,17 @@ main .fa-solid{
   .nav-menu-btn {
     display: none;
   }
-
+  nav .container{
+    padding: 1rem;
+  }
+  nav .nav-brand img {
+    width: 60px;
+  }
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   nav ul {
     display: flex;
   }
